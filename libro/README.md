@@ -28,16 +28,22 @@ parts.
 
 Once generated, the document looks as shown bellow  
 
-<img src="img/example/001.png" alt="Cover" width="300">
+Aspect of the cover  
+<img src="img/example/001.png" alt="Cover" width="450">
 
-<img src="img/example/002.png" alt="Header logos in the cover" width="300">
+The header logos can be change in the cabecera-logos file  
+<img src="img/example/002.png" alt="Header logos in the cover" width="450">
 
-<img src="img/example/003.png" alt="The table of content aspect" width="300">
+The table of content include a link for table of figures and table of tables  
+<img src="img/example/003.png" alt="The table of content aspect" width="450">
 
-<img src="img/example/004.png" alt="Fugures in the index" width="300">
+The table of figures pre-append the word `Figure <number>:`  
+<img src="img/example/004.png" alt="Fugures in the index" width="450">
 
-<img src="img/example/005.png" alt="Preview of the reference" width="300">
+Preview of link  
+<img src="img/example/005.png" alt="Preview of the reference" width="450">
 
-<img src="img/example/007.png" alt="Chapter and general aspect" width="300">
+<img src="img/example/007.png" alt="Chapter and general aspect" width="450">
 
-<img src="img/example/011.png" alt="Bibliography aspect" width="300">
+Aspect of the Bibliography  
+<img src="img/example/011.png" alt="Bibliography aspect" width="450">
