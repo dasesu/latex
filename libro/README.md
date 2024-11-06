@@ -28,16 +28,16 @@ parts.
 
 Once generated, the document looks as shown bellow  
 
-![Cover](img/example/001.png "Cover")
+<img src="img/example/001.png" alt="Cover" width="300">
 
-![Header logos in the cover](img/example/002.png "Header logos in the cover")
+<img src="img/example/002.png" alt="Header logos in the cover" width="300">
 
-![The table of content aspect](img/example/003.png "The table of content aspect")
+<img src="img/example/003.png" alt="The table of content aspect" width="300">
 
-![Fugures in the index](img/example/004.png "Fugures in the index")
+<img src="img/example/004.png" alt="Fugures in the index" width="300">
 
-![Preview of the reference](img/example/005.png "Preview of the reference")
+<img src="img/example/005.png" alt="Preview of the reference" width="300">
 
-![Chapter and general aspect](img/example/007.png "Chapter and general aspect")
+<img src="img/example/007.png" alt="Chapter and general aspect" width="300">
 
-![Bibliography aspect](img/example/011.png "Bibliography aspect")
+<img src="img/example/011.png" alt="Bibliography aspect" width="300">
