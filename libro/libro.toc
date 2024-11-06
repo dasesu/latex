@@ -1,0 +1,11 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {chapter}{Índice de Figuras}{3}{section*.2}%
+\contentsline {chapter}{Índice de Tablas}{4}{section*.4}%
+\contentsline {chapter}{\numberline {1}Capítulo de Ejemplo}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Sub Sección}{6}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Sub-sub Sección}{6}{subsection.1.1.1}%
+\contentsline {section}{\numberline {1.2}Ejemplo de titulo 2}{7}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Ejemplo de titulo 3}{8}{subsection.1.2.1}%
+\contentsline {subsubsection}{Ejemplo de titulo 4 (no numerado)}{8}{subsubsection*.8}%
+\contentsline {paragraph}{Ejemplo de título 5: (no numerado)}{8}{paragraph*.9}%
+\contentsline {section}{\numberline {1.3}Discusión de resultados}{9}{section.1.3}%

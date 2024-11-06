@@ -1,0 +1,48 @@
+\documentclass[letterpaper,12pt,openany]{dasesu_book}
+
+\definecolor{lightgrey}{HTML}{5db5e7}
+\definecolor{darkgrey}{HTML}{a0a0a0}
+\let\cleardoublepage=\clearpage
+
+\title{Apuntes}
+
+\begin{document}
+
+%-------- Portada --------%
+%\maketitle
+\input{partes/portada}
+
+%-------- Indice General --------%
+\tableofcontents
+
+% ------------------------------------------ %
+%  Creación del Indice de Figuras
+% ------------------------------------------ %
+%\cleardoublepage          % Usado para corregir bug de doble paginación
+\clearpage                 % Para que al linkear la referncia vaya al inicio de la pagina
+\phantomsection            % Para evitar que se los indices apunten a una pagina equivocada ( fantasma )
+                           % Debido al uso del paquete hyperlink
+\addcontentsline{toc}{chapter}{Índice de Figuras} % para que aparezca en el indice de contenidos
+\listoffigures             % indice de figuras
+
+
+% ------------------------------------------ %
+%  Creación del Indice de Tablas
+% ------------------------------------------ %
+%\cleardoublepage          % Usado para corregir bug de doble paginación
+\clearpage                 % Para que al linkear la referncia vaya al inicio de la pagina
+\phantomsection            % Para evitar que se los indices apunten a una pagina equivocada ( fantasma )
+                           % Debido al uso del paquete hyperlink
+\addcontentsline{toc}{chapter}{Índice de Tablas} % para que aparezca en el indice de contenidos
+\listoftables              % indice de tablas
+
+% ------------------------------------------ %
+%  Contenido
+% ------------------------------------------ %
+
+\input{partes/capitulo1}
+
+\bibliographystyle{ieeetr} % estilo de la bibliografía.
+\bibliography{partes/bibliografia}
+
+\end{document}
