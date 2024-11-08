@@ -5,17 +5,17 @@ the document
 
 To generate the pdf file:
 ```sh
-pdflatex libro.tex # this will generate a document with question marks in place
+pdflatex libro_TFG.tex # this will generate a document with question marks in place
                    # of unknown references
-bibtex libro.aux   # this will parse all the .bib files that were included in the
+bibtex libro_TFG.aux   # this will parse all the .bib files that were included in the
                    # document and generate meta information regarding references
-pdflatex libro.tex # this will generate the document with all the references in
+pdflatex libro_TFG.tex # this will generate the document with all the references in
                    # the correct place 
-pdflatex libro.tex # just in case if adding references broke page numbering
+pdflatex libro_TFG.tex # just in case if adding references broke page numbering
                    # somewhere
 ```
 
-In the root directory is the file `libro.tex`, this file is the one that
+In the root directory is the file `libro_TFG.tex`, this file is the one that
 contains the calls to each part of the document
 
 In the `parts` directory you have some documents corresponding to each of these
