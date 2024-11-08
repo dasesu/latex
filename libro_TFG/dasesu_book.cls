@@ -27,6 +27,7 @@
 \usepackage{color}             % Para cambiar el color de las letras
 \usepackage{pagecolor}         % Para cambiar el color de las pagina
 \usepackage{lipsum}            % Para generar texto lorem   
+\usepackage{comment}           % Permite comentar lo que se encuentre entre las etiquetas begin{comment} y end{comment}
 % \usepackage{showframe}       % Muestra los marcos del documento
 % \usepackage[all]{background} % Permite colocar contenido en background
 % \usepackage{lscape}          % Para activar vista horizontal (landscape) de la pagina
@@ -68,7 +69,7 @@
 
 % Parrafos 
 % \setlength{\parindent}{2cm}  % Cambia el tamaño de Sangrado, tiene precedencia sobre parskip
-% \renewcommand{\baselinestretch}{2.0} % Espacio entre lineas
+\renewcommand{\baselinestretch}{1.5} % Espacio entre lineas
 
 % Salto de pagina
 \clubpenalty=10000             % Control para lineas huerfanas (Penalización)
