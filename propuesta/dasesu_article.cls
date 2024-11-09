@@ -22,7 +22,7 @@
 \usepackage{extramarks}            % Required for headers and footers
 \usepackage{color}                 % Para cambiar el color de las letras
 \usepackage{pagecolor}             % Para cambiar el color de las pagina
-% \usepackage[all]{background}       % Permite colocar contenido en background
+\usepackage[all]{background}       % Permite colocar contenido en background
 \usepackage{lipsum}
 % \usepackage{showframe}           % Muestra los marcos del documento
 \usepackage{tikz}                  % Creación d imagenes
