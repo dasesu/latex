@@ -1,0 +1,107 @@
+\section{Introducción}
+
+Ejemplo de llamada a pie de pagina "linkeable" \footnote{Texto de la nota al pie}\par
+Ejemplo 1 de cita bibliográfica \cite{tapscott2016blockchain}\par
+Ejemplo 2 de cita bibliográfica\cite[pág 21]{tapscott2016blockchain}\par
+\lipsum[1-2]
+
+\subsection{Sub Título}
+   \lipsum[1-2]
+
+\subsubsection{Sub sub título}
+   \lipsum[1]
+   \begin{itemize}
+      %[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
+      \item Si el contenido de una bala excede una línea, entonces todas las líneas deben empezar
+            en el mismo lugar, es decir que deben tener la misma indentación como lo muestra esta
+            bala.
+      \item Antes de empezar una lista de balas de segundo nivel, es bueno dejar un espacio vertical
+            pequeño (aquí se dejó un espacio de 6 puntos) entre la bala de primer nivel y la primera
+            bala de segundo nive
+      \begin{itemize}
+         \item Las balas de segundo nivel se podrían identificar por el símbolo de punta de flecha.
+               Lo importante es que sean diferentes a las balas de primer nivel.
+         \item Deben existir varios ítems en la lista de balas. Es decir, una lista de balas con un
+               único elemento no tiene razón de ser.
+         \begin{itemize}
+            \item Al finalizar una lista de balas de segundo nivel, es bueno dejar un espacio vertical
+                  pequeño (aquí se dejó un espacio de 3 puntos) antes de la siguiente bala de primer nivel.
+            \item Al finalizar una lista de balas de segundo nivel, es bueno dejar un espacio vertical
+                  pequeño (aquí se dejó un espacio de 3 puntos) antes de la siguiente bala de primer nivel.
+         \end{itemize}
+      \end{itemize}
+      \item La indentación de las balas es importante. Cuando la indentación es muy grande, no se
+            ve bien la lista de balas
+   \end{itemize}
+   \lipsum[1-2]
+   %\cite{solminihac2005}
+   %ejemplo de cita 'En el texto' sin parentesis, para citar con parentesis usar \citep{}
+
+      \begin{table}[h]
+      \begin{center} % tabla centrada en el texto
+         \begin{tabular}{l c} %l -> left, c -> center, r -> right
+            \hline % línea horizontal
+            \hline
+            Título 1 & Título 2 \\  % Fila de encabezados
+            \hline
+            Cuadro 1 & Cuadro 2 \\  % (\\ indica el final de la línea)
+            Cuadro 3 & Cuadro 4 \\
+            \hline
+            \hline
+         \end{tabular}
+         \label{tablaUno}
+      \end{center}
+      \caption{Título de la tabla.}
+      \end{table}
+
+
+         \begin{table}[h]
+            \begin{center} % tabla centrada en el texto
+               \begin{tabular}{|c|c|}
+                  \hline
+                  \rowcolor[gray]{0.9} \makebox[2.5cm][c]{\textbf{País}} & \textbf{Extensión}\\
+                  \hline
+                  celda 3 &\makebox[2.5cm][c]{celda 4}\\
+                  \hline
+                  celda 5 &\makebox[2.5cm][r]{celda 6}\\
+                  \hline
+               \end{tabular}
+               \label{tablaUno}
+            \end{center}
+            \caption{Título de la tabla.}
+         \end{table}
+
+      
+      \begin{figure}[h]
+         \centering
+         \includegraphics[scale=0.5]{350x150.png}
+         \caption[short title]{Long caption describing the figure.}
+         \label{imagendesc1}
+         % Label: es para realizar referencias cruzadas,
+         % notar que se escribe sin espacios ni acentos.
+      \end{figure}
+      \FloatBarrier
+
+
+      \section{Ejemplo de titulo 2}
+         \lipsum[1]
+         \subsection{Ejemplo de titulo 3}
+            \lipsum[1]
+         \subsubsection{Ejemplo de titulo 4 (no numerado)}
+            \lipsum[1]
+            \paragraph{Ejemplo de título 5: (no numerado)}
+               \lipsum[1]
+
+      Este texto apunta a una referencia \ref{imagendesc}
+
+      \section{Discusión de resultados}
+         \lipsum[1-2]
+         \begin{figure}[h]
+            \centering
+            \includegraphics[scale=0.5]{350x150.png}
+            \caption{Descripción de la imagen}
+            \label{imagendesc}
+            % Label: es para realizar referencias cruzadas,
+         \end{figure}
+
+
