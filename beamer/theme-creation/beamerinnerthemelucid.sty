@@ -1,0 +1,47 @@
+\mode<presentation>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Definicion del aspecto del fondo
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Aspecto de las listas
+\setbeamertemplate{itemize items}[default]
+\setbeamertemplate{enumerate items}[default]
+
+%Separacion entre items i espacio entre parrafo y lista
+% Por desarrollar
+
+% Ajustando los margenes para los listados
+\settowidth{\leftmargini}{\usebeamertemplate{itemize item}}
+\addtolength{\leftmargini}{\labelsep}
+\settowidth{\leftmarginii}{\usebeamertemplate{itemize item}}
+\addtolength{\leftmarginii}{\labelsep}
+\settowidth{\leftmarginiii}{\usebeamertemplate{itemize item}}
+\addtolength{\leftmarginiii}{\labelsep}
+% Iconos para los items y enumerados
+\setbeamertemplate{itemize item}{ \normalsize{\donotcoloroutermaths$\bullet$}}
+\setbeamertemplate{itemize subitem}{\scriptsize{\donotcoloroutermaths$\circ$}}
+\setbeamertemplate{itemize subsubitem}{ \tiny{\donotcoloroutermaths\ding{226}}}
+\setbeamertemplate{enumerate item}{\scriptsize{\insertenumlabel)}}
+\setbeamertemplate{enumerate subitem}{ \scriptsize{\insertenumlabel.\insertsubenumlabel)} }
+\setbeamertemplate{enumerate subsubitem}{\insertenumlabel.\insertsubenumlabel.\insertsubsubenumlabel}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Acerca del contenido Seccione y subsecciones
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamertemplate{section in toc}[sections numbered]
+\setbeamertemplate{subsection in toc}{\footnotesize\leavevmode\vspace*{-1em}\leftskip=3.2em\rlap{\hskip-2em\inserttocsectionnumber.\inserttocsubsectionnumber}\inserttocsubsection\par}
+
+
+\mode
+<all>

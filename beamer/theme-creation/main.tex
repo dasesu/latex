@@ -1,0 +1,57 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc} % Para que reconozca la codificacion
+\usepackage[spanish,es-tabla]{babel} % Para idioma en español
+\usepackage[T1]{fontenc} % Para Codificación tipo 1 del archivo.
+\usepackage{xcolor} % Para cambiar el color de las letras
+\usepackage{pagecolor} % Para cambiar el color de las pagina
+\usepackage{colortbl} % PAra usar colores en tablas
+\usepackage{graphicx} % Para incluir graficos
+\usepackage{placeins} % para evitar que se descuadre el texto con respecto a las imagenes
+\usepackage{wrapfig} %  Para texto alrededor de las figuras
+\usepackage{amsmath} % Para más símbolos matemáticos
+\usepackage{amsthm} % Para más símbolos matemáticos
+\usepackage{amssymb} % Para incluir algunos simbolos matematicos
+\usepackage{marvosym} % Para incluir simbolo de Euro
+\usepackage{fontawesome} % 
+\usepackage{pifont} % Para incluir simbolos ding
+\usepackage{array}
+\usepackage{multirow} % Permite construir tablas en la que las celdas ocupan varias filas 
+\usepackage{dcolumn} % Para dividir columna por una diagonal
+\usepackage{parskip} % Descomentar para que los parrafos no comiencen con sangria. y espacio interlineado
+\usepackage{tikz} % Para framezoom con circulos
+\usepackage{soul} % Para framezoom con circulos
+\usepackage{hyperref}
+
+\usetikzlibrary{spy} % Para framezoom con circulos
+\setbeamercovered{transparent} % para que los items se vean en transparente antes de ser seleccioandos
+
+\usepackage{enumerate} %Para trabajar con listas enumeradas
+\usepackage{multimedia} % para incluir videos
+\usepackage{background}
+
+\usetheme{lucid}
+
+
+
+\setbeamertemplate{background}{\tikz[overlay,remember picture]\node[opacity=0.2]at (current page.center){\includegraphics[width=16cm]{img/texturafondo.jpg}};}
+
+\institute{Nombre de la Institucion \\ \small{Información adicional} }
+\title{Título de la presentación}
+\subtitle{Un subtítulo}
+\author{Autor}
+%\date{}
+
+\AtEndDocument{\usebeamertemplate{endpage}}
+
+\begin{document}
+
+\input{content.tex}
+
+\begin{frame}{Referencias}
+
+\bibliographystyle{IEEEtran.bst} % estilo de la bibliografía.
+\bibliography{partes/bibliografia} % yyyy.bib es el fichero donde está salvada la bibliografía.
+\end{frame}
+
+\end{document}

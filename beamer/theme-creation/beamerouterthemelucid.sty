@@ -1,0 +1,145 @@
+\mode<presentation>
+
+\RequirePackage{tikz}
+
+\newlength{\marginedPaperWidth}{\paperwidth - 0.2cm}
+
+
+% Definicion del aspecto de la primera pagina
+\defbeamertemplate*{title page}{lucid}
+{ 
+  \vfill
+    \begin{beamercolorbox}[wd=\paperwidth,ht=1.2cm]{frametitle} 
+    \begin{tikzpicture}
+       \useasboundingbox(0,2) rectangle(\the\paperwidth,5.5);
+       { 
+          \usebeamercolor[fg]{frametitle-bottom}
+        }
+       \fill[color=lucidcolor3] (1.8,1) rectangle(\paperwidth,1.05);
+    \end{tikzpicture}
+    \end{beamercolorbox}
+
+    {\centering
+    \begingroup
+       
+    \vspace*{-3em}
+       \hspace{-1em}
+       \begin{minipage}{0.15\textwidth} \begin{flushleft}
+       \includegraphics[scale = .5]{img/logo-ciens}
+       \end{flushleft}\end{minipage}
+       %&
+       \begin{minipage}{.70\linewidth}
+       \begin{center}
+       \vspace*{-0.5em}
+       \fontfamily{lmr}\selectfont\usebeamerfont{institute}\usebeamercolor[fg]{institute}\insertinstitute
+       \end{center}
+       \end{minipage}
+       %&
+       \begin{minipage}{0.15\textwidth} \begin{flushright}
+       \includegraphics[scale = .5]{img/university.png}
+       \end{flushright}\end{minipage}
+    
+    \vspace*{0.5em}
+    \endgroup
+    \par
+    }
+
+    {\centering
+      \usebeamerfont{title}\usebeamercolor[fg]{title}\textbf{\inserttitle}
+      \par
+    }
+    {\centering
+      \usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\textit{\insertsubtitle}
+      \par
+    }
+    \vskip1cm%
+    \vspace*{-0.5em}
+    {\centering
+      \usebeamerfont{author}\usebeamercolor[fg]{author}By.\insertauthor
+      \par
+    }
+    \vspace*{-0.5em}
+    {\centering
+      \usebeamerfont{date}\usebeamercolor[fg]{date}\insertdate
+      \par
+    }
+  \vfill
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Frame title
+\defbeamertemplate*{frametitle}{lucid}[1][]{
+   %\vspace*{-0.1em}
+   \vskip0.18cm%
+   \begin{beamercolorbox}[wd=\paperwidth,ht=1.2cm]{frametitle} 
+      \begin{tikzpicture}
+         \useasboundingbox(0,0) rectangle(\the\paperwidth,1.2);
+         { 
+            \usebeamercolor[fg]{frametitle-left}
+            \usebeamercolor[fg]{frametitle-bottom}
+          }
+         \fill[color=frametitle-left.fg] (0,1) rectangle(\paperwidth,1.4);
+         \fill[color=frametitle-left.fg] (0.2,2) rectangle(\paperwidth,3);
+         \fill[color=lucidcolor3] (1,0.1) rectangle({\paperwidth-1cm},0.125);
+         \ifx\insertframesubtitle\@empty%
+         {\node[anchor=west] at (0.8,0.46){\usebeamerfont{frametitle}\normalsize\textbf{\insertframetitle}};}
+         \else%
+         {
+         \node[anchor= west] at (0.8,0.68){\usebeamerfont{frametitle}\normalsize\textbf{\insertframetitle}};%
+         \node[anchor= west] at (0.8,0.32){\usebeamerfont{framesubtitle}\insertframesubtitle};
+         }%
+         \fi
+      \end{tikzpicture}
+   \end{beamercolorbox}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Frame footer
+\def\logo{%
+  \includegraphics[width=3cm]{img/logo-ucv.png}%
+}
+
+% Colors.
+\setbeamercolor*{lineup}{parent=palette primary}
+\setbeamercolor*{linemid}{parent=palette secondary}
+\setbeamercolor*{linebottom}{parent=palette tertiary}
+\setbeamercolor*{page header}{parent=titlelike}
+
+\setbeamertemplate{footline}{%
+%\documentclass[ignorenonframetext]{beamer}
+
+   \begin{beamercolorbox}[wd=\paperwidth,ht=2em]{frametitle} 
+      \begin{tikzpicture}
+         \useasboundingbox(0,0) rectangle(\the\paperwidth,1);
+         { 
+            \usebeamercolor[fg]{frametitle-bottom}
+            \usebeamercolor[fg]{lucidcolor3}
+          }
+         \fill[color=frametitle-bottom.fg] (1.2,0.16) rectangle(\paperwidth,0.4);
+         \fill[color=lucidcolor3] (0,0.06) rectangle(\paperwidth,0.16);
+         \fill[color=lucidcolor4] (0.7,0) rectangle({\paperwidth+1em},0.06);
+         \node[anchor=west] at (0.4,0.3){\scriptsize\textbf{\insertframenumber}};
+         \node[anchor=west] at (1.2,0.28){\tiny\textbf{\insertsection}};
+      \end{tikzpicture}
+   \end{beamercolorbox}
+
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Ultima pagina
+\setbeamertemplate{endpage}{%
+   \begin{frame}[plain]
+      \begin{center}
+      \Huge{¿Preguntas?}
+      \end{center}
+   \end{frame}
+}
+
+\mode
+<all>

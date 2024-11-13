@@ -1,0 +1,97 @@
+% ------------------------------------ % 
+
+   % Pagina 1
+   \begin{frame}[plain]
+   \titlepage % como colocar el titulo de la primera pagina
+   \end{frame}
+
+% ------------------------------------ % 
+
+   % Pagina 2
+   \begin{frame}
+   \frametitle{Tabla de Contenido} % una forma de colocar el titutlo
+   \tableofcontents % indice de contenido
+   \end{frame}
+
+% ------------------------------------ % 
+
+   % Pagina 3
+   \section{Marco Teórico}  % definiendo secciones y subsecciones, esto es lo que en realidad va en el indice
+   \begin{frame}{Some title} %otra forma de colocar el titulo
+   \framesubtitle{Some subtitle}
+      \begin{itemize}
+         \item Beamer is a \LaTeX class that allows you to create presentations
+         \item The project home page is \url{http://latex-beamer.sourceforge.net/}
+         \item Beamer contains several themes, but they are a bit ugly
+          \begin{itemize}
+             \item But with a lot of useful features, such as navigation bars, outlines, etc.
+          \end{itemize}
+         \item Torino is a pretty theme
+          \begin{itemize}
+             \item With a lot of useless - but pretty - features
+             \item But without some useful features
+             \item Well suited for short talks, for longer talks you should use themes with navigation bars
+          \end{itemize}
+          \item Why the name?
+      \end{itemize}
+   \end{frame}
+
+% ----------------------------------------- %
+
+
+  \begin{frame}
+    \frametitle{Un bloque natural} 
+    \begin{block}{Título del bloque}
+    \begin{itemize}
+      \item Elemento
+      \item Otro elemento
+    \end{itemize}
+    \end{block}
+  \end{frame}
+
+% ----------------------------------------- %
+
+   \begin{frame}
+   \frametitle{Mas ejemplos de bloques} 
+   \begin{exampleblock}{Título del bloque}<+->
+      \begin{itemize}
+      \item Un item
+      \item Otro item
+      \item Otro item más
+      \end{itemize}
+   \end{exampleblock}
+
+   \begin{exampleblock}{Título del bloque}<+->
+      \begin{itemize}
+      \item<+-> Un item
+      \item<+-> Otro item
+      \item<+-> Otro item más
+      \end{itemize}
+   \end{exampleblock}
+   \end{frame}
+
+% ----------------------------------------- %
+
+  \begin{frame}
+    \frametitle{Un blocque de Alerta} 
+    \begin{alertblock}{Título del bloque}
+      \begin{itemize}
+        \item Un item
+        \item Otro item
+        \item Otro item más
+      \end{itemize}
+    \end{alertblock}
+  \end{frame}
+% ------------------------------------ % 
+
+   \begin{frame}
+   \frametitle{Title}
+   \framesubtitle{subtitle}
+     \begin{itemize}
+       \item<+-> This is on the first only
+       \item<+-> This is on the first three slides
+       \item<+-> This is on the second to fourth slides and the sixth slide
+     \end{itemize}
+   \end{frame}
+
+
